@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+; Author kymchi
+; https://github.com/kym-chi/RunAsAddons
+; Also see: https://support.microsoft.com/en-us/topic/how-to-add-modify-or-delete-registry-subkeys-and-values-by-using-a-reg-file-9c7f37cf-a5e9-e1cd-c4fa-2a26218a1a23#bkmk_syntax
+
+; Run as invoker
+[HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\forcerunasinvoker]
+@="Run as invoker"
+"Icon"="%SystemRoot%\\System32\\SHELL32.dll,137"
+"Position"="Middle"
+"MultiSelectModel"="Single"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\forcerunasinvoker\command]
+@="cmd /min /C \"set __COMPAT_LAYER=RUNASINVOKER && start \"\" \"%1\"\""
+
+; Run as highest
+[HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\forcerunashighest]
+@="Run as highest"
+"Icon"="%SystemRoot%\\System32\\SHELL32.dll,137"
+"Position"="Middle"
+"MultiSelectModel"="Single"
+"HasLUAShield"=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\forcerunashighest\command]
+@="cmd /min /C \"set __COMPAT_LAYER=RUNASHIGHEST && start \"\" \"%1\"\""

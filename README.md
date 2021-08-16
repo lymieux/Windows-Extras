@@ -28,7 +28,7 @@
 | - | - |
 | Remove-ShareWithSkype | Removes the "Share With Skype" option |
 | Add-ShareWithSkype |Re-Adds the "Share With Skype" option if removed |
-| Restart-Explorer | Restarts Explorer so that any changes that `` or `` applies, will properly show |
+| Restart-Explorer | Restarts Explorer so that any changes that `Remove-ShareWithSkype` or `Add-ShareWithSkype` applies, will properly show |
 
 ### Installation
 > Simply download the addon(s) that you wish to add, and double click it to run it.
@@ -39,7 +39,7 @@
 > prompt and will query would with a continuation question for the program to add the 
 > Registry Keys, choose accordingly!
 
-### "Options"
+##### "Options"
 > The `Options` Folder is for options that are not implemented automatically in the Addons
 > Folder reg files because a simple reg file cannot suffice the commands needed to detect 
 > a Skype Option, and block it from showing up. All .bat contents can be accessed 

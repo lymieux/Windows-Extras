@@ -26,8 +26,8 @@
 ##### Options Folder
 | File Name | Description |
 | - | - |
-| Remove-ShareWithSkype |  |
-| Add-ShareWithSkype |  |
+| Remove-ShareWithSkype | Removes the "Share With Skype" option |
+| Add-ShareWithSkype |Re-Adds the "Share With Skype" option if removed |
 | Restart-Explorer | Restarts Explorer so that any changes that `` or `` applies, will properly show |
 
 ### Installation

@@ -15,14 +15,14 @@
 
 __| Run As Admin |__
 
-| Run an app as administrator (the UAC prompt appears each time) |
+Run an app as administrator (the UAC prompt appears each time)
 
 __| Run As Highest |__ 
 
-| Run a program with the highest-level permission available to the user (the UAC prompt will appear if a user has the administrator privileges) |
+Run a program with the highest-level permission available to the user (the UAC prompt will appear if a user has the administrator privileges)
 
 __| Run As Invoker |__
 
-| Run an app with the privileges of a parent process without the UAC prompt |
+Run an app with the privileges of a parent process without the UAC prompt
 
 Version: `1.1.0`

@@ -24,8 +24,11 @@ set /A ERRORLEVEL=0
 goto :END
 
 :COMMAND
+:: first check to see if bing wallpapaer app is installed
+if not exist "%localappdata%\Microsoft\BingWallpaperApp" goto :NOBB
+:: adds user\Pictures\Bing if no no exist
 if not exist "%userprofile%\Pictures\Bing" mkdir "%userprofile%\Pictures\Bing"
-for %%e in ("%localappdata%\Microsoft\BingDesktop\en-us\Apps\Wallpaper_*\VersionIndependent\images\*.jpg") do (
+for %%e in ("%localappdata%\Microsoft\BingWallpaperApp\WPImages\*.jpg") do (
   copy /Y %%e %userprofile%\Pictures\Bing\
   echo. Background Saved
 )
@@ -44,6 +47,15 @@ echo.
 echo. Press any key to close, or just close window!
 pause >nul
 exit %ERRORLEVEL%
+
+:NOBB
+echo.
+echo. Bing Backgrounds not downloaded!
+echo.
+echo. Link:
+echo. https://www.microsoft.com/en-us/bing/bing-wallpaper
+set /A ERRORLEVEL=1
+goto :END
 
 endlocal
 

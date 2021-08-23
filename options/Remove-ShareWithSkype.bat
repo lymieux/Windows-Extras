@@ -1,5 +1,5 @@
 @echo off
-title Run As Addon :: Remove Share With Skype
+title Windows Extras :: Remove Share With Skype
 ::all "echo. {nothing}" is for spacing purposes
 setlocal EnableDelayedExpansion
 
@@ -8,7 +8,7 @@ set keyword=Skype
 
 :INFO
 ::Echos of info
-echo. "Run As" Addon(s)
+echo. Windows Extras
 echo. "Share on Skype" Option Remover
 echo. Author: kymchi
 echo.
@@ -26,7 +26,7 @@ set /A ERRORLEVEL=0
 goto :END
 
 :COMMAND
-md "%localappdata%\RunAsAddon"
+md "%localappdata%\WindowsExtras"
 echo.
 echo. Starting Registry Indexing:
 for /f %%r in ('reg query "HKEY_CLASSES_ROOT\PackagedCom\ClassIndex" /S') do (

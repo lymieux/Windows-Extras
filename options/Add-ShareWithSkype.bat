@@ -1,11 +1,11 @@
 @echo off
-title Run As Addon :: Re-Add Share With Skype
+title Windows Extras :: Re-Add Share With Skype
 ::all echo. {nothing} is for spacing purposes
 setlocal enabledelayedexpansion
 
 :INFO
 ::Echos of info
-echo. "Run As" Addon(s)
+echo. Windows Extras
 echo. "Share on Skype" Option Re-Adder
 echo. Author: kymchi
 echo.

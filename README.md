@@ -2,7 +2,7 @@
 
 ### __Adding Extras__
 > ___Windows Extras___ is a repo that contains the files for cetain 
-> Windows extras that I find useful and in constant need of
+> Windows extras that I find useful and in constant need of.
 > `Windows Only`
 
 ### __Folders:__

@@ -51,7 +51,7 @@ goto :END
 :REGADD
 echo.
 for /f "tokens=1,2,3,4 delims=\" %%a in ("%~1") do (
-  echo.Remove-ShareWithSkype.bat var: %%d>%localappdata%\RunAsAddon\%%d.txt
+  echo.Remove-ShareWithSkype.bat var: %%d>%localappdata%\WindowsExtras\%%d.txt
   REG ADD "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /v %%d /d "Skype"
 )
 exit /b 1

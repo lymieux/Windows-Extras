@@ -28,7 +28,7 @@ goto :END
 ::if r contains c delete c
 echo.
 echo. Starting Registry Indexing:
-for %%r in (%localappdata%\RunAsAddon\*.txt) do (
+for %%r in (%localappdata%\WindowsExtras\*.txt) do (
   for /f %%c in ('reg query "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /S') do (
     echo.
     echo. Registered SkypeApp Token Txt:

@@ -36,7 +36,7 @@
 | Remove-Cortana | Blocks Cortana from living |
 | Add-Cortana | Reincarnates Cortana |
 | Save-Bing-Background | Saves background of Bing Wallpaper |
-| Folder Locker | Creates an invisible locked and hidden folder named "Locker" |
+| Folder-Locker | Creates an invisible locked and hidden folder named "Locker" |
 
 ## Installation
 > Simply download the file that you wish to add, and double click it to run it.

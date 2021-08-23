@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+; Author kymchi
+; https://github.com/kym-chi/Windows-Extras
+; Also see: https://support.microsoft.com/en-us/topic/how-to-add-modify-or-delete-registry-subkeys-and-values-by-using-a-reg-file-9c7f37cf-a5e9-e1cd-c4fa-2a26218a1a23#bkmk_syntax
+
+; AllowCortana Delete Value
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows Search]
+"AllowCortana"=-
